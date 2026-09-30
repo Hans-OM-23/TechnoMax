@@ -1,0 +1,113 @@
+/* Global dark styles */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 25px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  min-height: 100vh;
+}
+
+/* Ensure text readability across dark theme */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important;
+}
+
+p, span, label, small {
+  color: #ffffff;
+}
+
+.text-muted {
+  color: #adb5bd !important;
+}
+
+.text-secondary {
+  color: #ced4da !important;
+}
+
+/* Cards styling - subtle dark theme without hover animations */
+.card, .product-card {
+  background-color: #141414 !important;
+  color: #ffffff !important;
+  border: 1px solid #2d2d2d !important;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.product-photo {
+  height: 270px;
+  object-fit: cover;
+}
+
+/* Carousel custom styling */
+.carousel-inner {
+  border-radius: 1rem;
+}
+
+.carousel-item img {
+  height: 480px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.78);
+  border: 1px solid #333333;
+  border-radius: 0.75rem;
+  padding: 1.25rem 2rem;
+  backdrop-filter: blur(6px);
+  bottom: 2.5rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 320px;
+  }
+
+  .carousel-caption {
+    padding: 0.75rem 1rem;
+    bottom: 1.5rem;
+    max-width: 90%;
+  }
+
+  .carousel-caption h4 {
+    font-size: 1.1rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Table styling for dark theme */
+.table {
+  --bs-table-bg: #141414;
+  --bs-table-striped-bg: #1d1d1d;
+  --bs-table-color: #ffffff;
+  --bs-table-border-color: #333333;
+}
+
+/* Form controls in dark mode */
+.form-control {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-color: #3d3d3d !important;
+}
+
+.form-control:focus {
+  background-color: #222222 !important;
+  color: #ffffff !important;
+  border-color: #0d6efd !important;
+}
+
+.form-control::placeholder {
+  color: #7a8288 !important;
+}
